@@ -7,7 +7,7 @@ export default function Home() {
   const [features, setFeatures] = useState([]); // State to hold the fetched data
 
   const getData = async () => {
-    const response = await fetcher(`http://localhost:1337/api/company-specialities`);
+    const response = await fetcher(`https://uplifting-fun-36ddc60736.strapiapp.com/api/company-specialities`);
     const data = response.data.map(item => ({
       title: item.title, // Assuming the title is in the 'attributes' field
       description: item.description // Assuming the description is in the 'attributes' field
